@@ -187,7 +187,7 @@ if SERVER then
 	-- Just have them run the "reeboot when" command as the code already exists there.
 	hook.Add( "PlayerInitialSpawn", "reeboot_PlayerInitialSpawn", function( ply )
 		timer.Simple( 30, function()
-			ply:ConCommand( "reeboot", "when" )
+			ply:ConCommand( "reeboot when" )
 		end )
 	end )
 	
